@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import './App.css';
-
 import Header from './components/Header';
 import MapComponent from './components/MapComponent';
 import Filter from './components/Filter';
+import Checklist from './components/Checklist';
 
 
 {/*<!---------------------------- Start of  DONT TOUCH!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -------------------------------------------------------------------------------------->*/ }
@@ -108,10 +108,11 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <Filter fetchFilterData={this.fetchDataFromFilterJsx} />
+        <Checklist />
+        {/*<Filter fetchFilterData={this.fetchDataFromFilterJsx} />
         <div className="map__section">
           {mapSection}
-        </div>
+    </div>*/}
       </div>
     )
   }
